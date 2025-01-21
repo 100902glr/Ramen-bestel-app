@@ -16,7 +16,7 @@
       >
         <!-- Logo Section -->
         <div class="flex lg:flex-1">
-          <a href="../index.html" class="-m-1.5 p-1.5">
+          <a href="../menu.php" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <img class="h-8 w-auto" src="../media/ramen.png" alt="" />
           </a>
@@ -49,7 +49,7 @@
 
         <!-- Desktop Navigation Links -->
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="../index.html" class="text-sm/6 font-semibold text-red-900"
+          <a href="../menu.php" class="text-sm/6 font-semibold text-red-900"
             >Home</a
           >
           <a href="menu.html" class="text-sm/6 font-semibold text-red-900"
@@ -73,6 +73,32 @@
           >
         </div>
       </nav>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden bg-red-900 lg:hidden">
+            <a
+                    href="../menu.php"
+                    class="block text-sm font-semibold text-white px-6 py-4"
+            >Home</a
+            >
+            <a
+                    href="menu.php"
+                    class="block text-sm font-semibold text-white px-6 py-4"
+            >Menu</a
+            >
+            <a
+                    href="team.html"
+                    class="block text-sm font-semibold text-white px-6 py-4"
+            >Team</a
+            >
+            <a
+                    href="contact.html"
+                    class="block text-sm font-semibold text-white px-6 py-4"
+            >Contact</a
+            >
+            <a href="winkelwagen.html" class="block text-sm font-semibold text-white px-6 py-4"
+            >Winkelwagen</a
+            >
+        </div>
     </header>
 
     <!-- Search Bar Positioned Below Menu -->

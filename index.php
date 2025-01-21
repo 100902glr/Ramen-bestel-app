@@ -18,8 +18,8 @@
         >
           <!-- Logo Section -->
           <div class="flex lg:flex-1">
-            <a href="index.html" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
+            <a href="menu.php" class="-m-1.5 p-1.5">
+              <span class="sr-only">Our Company</span>
               <img class="h-8 w-auto" src="media/ramen.png" alt="" />
             </a>
           </div>
@@ -51,11 +51,11 @@
 
           <!-- Desktop Navigation Links -->
           <div class="hidden lg:flex lg:gap-x-12">
-            <a href="index.html" class="text-sm/6 font-semibold text-white"
+            <a href="menu.php" class="text-sm/6 font-semibold text-white"
               >Home</a
             >
             <a
-              href="page's/menu.html"
+              href="page's/menu.php"
               class="text-sm/6 font-semibold text-white"
               >Menu</a
             >
@@ -87,12 +87,12 @@
         <!-- Mobile Menu (Hidden by Default) -->
         <div id="mobile-menu" class="hidden bg-red-900 lg:hidden">
           <a
-            href="index.html"
+            href="menu.php"
             class="block text-sm font-semibold text-white px-6 py-4"
             >Home</a
           >
           <a
-            href="page's/menu.html"
+            href="page's/menu.php"
             class="block text-sm font-semibold text-white px-6 py-4"
             >Menu</a
           >
@@ -106,7 +106,7 @@
             class="block text-sm font-semibold text-white px-6 py-4"
             >Contact</a
           >
-          <a href="#" class="block text-sm font-semibold text-white px-6 py-4"
+          <a href="page's/winkelwagen.html" class="block text-sm font-semibold text-white px-6 py-4"
             >Winkelwagen</a
           >
         </div>
@@ -163,7 +163,7 @@
               </p>
               <div class="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="page's/menu.html"
+                  href="page's/menu.php"
                   class="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                   >Menu!</a
                 >
@@ -230,7 +230,7 @@
           >
             <div>
               <img
-                src="media/Trimmed_03_Miso-Ramen_02_M.jpg"
+                src="media/Item1.jpg"
                 alt="Drawstring top with elastic loop closure and textured interior padding."
                 class="aspect-[3/2] w-full rounded-lg object-cover"
               />
@@ -569,7 +569,7 @@
           <a href="page's/team.html" class="text-gray-400 hover:text-white"
             >Team</a
           >
-          <a href="page's/menu.html" class="text-gray-400 hover:text-white"
+          <a href="page's/menu.php" class="text-gray-400 hover:text-white"
             >Menu</a
           >
           <a href="page's/winkelwagen.html" class="text-gray-400 hover:text-white">Winkelwagen</a>
