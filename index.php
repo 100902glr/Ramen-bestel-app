@@ -1,6 +1,10 @@
+<?php
+include "menu.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -8,123 +12,123 @@
     <script src="js/index.js"></script>
     <link rel="stylesheet" href="css/index.css" />
     <title>HomePage</title>
-  </head>
-  <body>
-    <div class="bg-red-900">
-      <header class="absolute inset-x-0 top-0 z-50">
+</head>
+<body>
+<div class="bg-red-900">
+    <header class="absolute inset-x-0 top-0 z-50">
         <nav
-          class="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
+                class="flex items-center justify-between p-6 lg:px-8"
+                aria-label="Global"
         >
-          <!-- Logo Section -->
-          <div class="flex lg:flex-1">
-            <a href="menu.php" class="-m-1.5 p-1.5">
-              <span class="sr-only">Our Company</span>
-              <img class="h-8 w-auto" src="media/ramen.png" alt="" />
-            </a>
-          </div>
+            <!-- Logo Section -->
+            <div class="flex lg:flex-1">
+                <a href="index.php" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Our Company</span>
+                    <img class="h-8 w-auto" src="media/ramen.png" alt="" />
+                </a>
+            </div>
 
-          <!-- Hamburger Menu Button (Visible on Mobile) -->
-          <div class="flex lg:hidden">
-            <button
-              type="button"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="size-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-                data-slot="icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </button>
-          </div>
+            <!-- Hamburger Menu Button (Visible on Mobile) -->
+            <div class="flex lg:hidden">
+                <button
+                        type="button"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
+                >
+                    <span class="sr-only">Open main menu</span>
+                    <svg
+                            class="size-6"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            data-slot="icon"
+                    >
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
+                </button>
+            </div>
 
-          <!-- Desktop Navigation Links -->
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="menu.php" class="text-sm/6 font-semibold text-white"
-              >Home</a
-            >
-            <a
-              href="page's/menu.php"
-              class="text-sm/6 font-semibold text-white"
-              >Menu</a
-            >
-            <a
-              href="page's/team.html"
-              class="text-sm/6 font-semibold text-white"
-              >Team</a
-            >
-            <a
-              href="page's/contact.html"
-              class="text-sm/6 font-semibold text-white"
-              >Contact</a
-            >
-            <a href="page's/winkelwagen.html" class="text-sm/6 font-semibold text-white"
-              >Winkelwagen</a
-            >
-          </div>
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="index.php" class="text-sm/6 font-semibold text-white"
+                >Home</a
+                >
+                <a
+                        href="page's/menuItems.php"
+                        class="text-sm/6 font-semibold text-white"
+                >Menu</a
+                >
+                <a
+                        href="page's/team.html"
+                        class="text-sm/6 font-semibold text-white"
+                >Team</a
+                >
+                <a
+                        href="page's/contact.html"
+                        class="text-sm/6 font-semibold text-white"
+                >Contact</a
+                >
+                <a href="page's/winkelwagen.php" class="text-sm/6 font-semibold text-white"
+                >Winkelwagen</a
+                >
+            </div>
 
-          <!-- Login Link (Desktop Only) -->
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="page's/inlog.html"
-              class="text-sm/6 font-semibold text-white"
-              >Log in <span aria-hidden="true">&rarr;</span></a
-            >
-          </div>
+            <!-- Login Link (Desktop Only) -->
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a
+                        href="page's/inlog.html"
+                        class="text-sm/6 font-semibold text-white"
+                >Log in <span aria-hidden="true">&rarr;</span></a
+                >
+            </div>
         </nav>
 
         <!-- Mobile Menu (Hidden by Default) -->
         <div id="mobile-menu" class="hidden bg-red-900 lg:hidden">
-          <a
-            href="menu.php"
-            class="block text-sm font-semibold text-white px-6 py-4"
+            <a
+                    href="index.php"
+                    class="block text-sm font-semibold text-white px-6 py-4"
             >Home</a
-          >
-          <a
-            href="page's/menu.php"
-            class="block text-sm font-semibold text-white px-6 py-4"
+            >
+            <a
+                    href="page's/menuItems.php"
+                    class="block text-sm font-semibold text-white px-6 py-4"
             >Menu</a
-          >
-          <a
-            href="page's/team.html"
-            class="block text-sm font-semibold text-white px-6 py-4"
+            >
+            <a
+                    href="page's/team.html"
+                    class="block text-sm font-semibold text-white px-6 py-4"
             >Team</a
-          >
-          <a
-            href="page's/contact.html"
-            class="block text-sm font-semibold text-white px-6 py-4"
+            >
+            <a
+                    href="page's/contact.html"
+                    class="block text-sm font-semibold text-white px-6 py-4"
             >Contact</a
-          >
-          <a href="page's/winkelwagen.html" class="block text-sm font-semibold text-white px-6 py-4"
+            >
+            <a href="page's/winkelwagen.php" class="block text-sm font-semibold text-white px-6 py-4"
             >Winkelwagen</a
-          >
+            >
         </div>
-      </header>
+    </header>
 
-      <div class="relative isolate overflow-hidden pt-14">
+    <div class="relative isolate overflow-hidden pt-14">
         <img
-          src="media/background.webp"
-          alt=""
-          class="absolute inset-0 -z-10 size-full object-cover blur"
+                src="media/background.webp"
+                alt=""
+                class="absolute inset-0 -z-10 size-full object-cover blur"
         />
         <div
-          class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          aria-hidden="true"
+                class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true"
         >
-          <div
-            class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-            style="
+            <div
+                    class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                    style="
               clip-path: polygon(
                 74.1% 44.1%,
                 100% 61.6%,
@@ -144,45 +148,45 @@
                 74.1% 44.1%
               );
             "
-          ></div>
+            ></div>
         </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div class="hidden sm:mb-8 sm:flex sm:justify-center"></div>
-            <div class="text-center">
-              <h1
-                class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl"
-              >
-                Ramen eet je samen!
-              </h1>
-              <p
-                class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8 glow"
-              >
-                Bij onze ramen shop heb je de lekkerste en verste ramen die je
-                ooit gaat proeven!!!
-              </p>
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                  href="page's/menu.php"
-                  class="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-                  >Menu!</a
-                >
-                <a
-                  href="page's/team.html"
-                  class="text-sm/6 font-semibold text-white"
-                  >Leer meer over ons!<span aria-hidden="true">→</span></a
-                >
-              </div>
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="hidden sm:mb-8 sm:flex sm:justify-center"></div>
+                <div class="text-center">
+                    <h1
+                            class="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl"
+                    >
+                        Ramen eet je samen!
+                    </h1>
+                    <p
+                            class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8 glow"
+                    >
+                        Bij onze ramen shop heb je de lekkerste en verste ramen die je
+                        ooit gaat proeven!!!
+                    </p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a
+                                href="page's/menuItems.php"
+                                class="rounded-md bg-red-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                        >Menu!</a
+                        >
+                        <a
+                                href="page's/team.html"
+                                class="text-sm/6 font-semibold text-white"
+                        >Leer meer over ons!<span aria-hidden="true">→</span></a
+                        >
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
         <div
-          class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-          aria-hidden="true"
+                class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                aria-hidden="true"
         >
-          <div
-            class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-            style="
+            <div
+                    class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    style="
               clip-path: polygon(
                 74.1% 44.1%,
                 100% 61.6%,
@@ -202,14 +206,14 @@
                 74.1% 44.1%
               );
             "
-          ></div>
+            ></div>
         </div>
-      </div>
     </div>
-    <div class="bg-red-900">
-      <div
-        class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8"
-      >
+</div>
+<div class="bg-red-900">
+    <div
+            class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8"
+    >
         <!-- Details section -->
         <section aria-labelledby="details-heading">
           <div class="flex flex-col items-center text-center">
@@ -296,12 +300,6 @@
                   >$15</span
                 >
               </p>
-              <a
-                href="#"
-                aria-describedby="tier-basic"
-                class="mt-10 block rounded-md bg-red-900 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >Buy Meal</a
-              >
               <p class="mt-10 text-sm/6 font-semibold text-gray-900">
                 Alles voor een gezonde maaltijd!
               </p>
@@ -369,12 +367,6 @@
                   >€25</span
                 >
               </p>
-              <a
-                href="#"
-                aria-describedby="tier-essential"
-                class="mt-10 block rounded-md bg-red-900 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >Buy Meal</a
-              >
               <p class="mt-10 text-sm/6 font-semibold text-gray-900">
                 Alles voor een makkelijke, romantische avond met jou en je
                 schatje!
@@ -459,12 +451,6 @@
                   >€40</span
                 >
               </p>
-              <a
-                href="#"
-                aria-describedby="tier-growth"
-                class="mt-10 block rounded-md bg-red-900 px-3 py-2 text-center text-sm/6 font-semibold text-white shadow-sm hover:bg-red-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >Buy Meal</a
-              >
               <p class="mt-10 text-sm/6 font-semibold text-gray-900">
                 Een lekker en gezond pakket voor hel de familie!
               </p>
@@ -569,10 +555,10 @@
           <a href="page's/team.html" class="text-gray-400 hover:text-white"
             >Team</a
           >
-          <a href="page's/menu.php" class="text-gray-400 hover:text-white"
+          <a href="page's/menuItems.php" class="text-gray-400 hover:text-white"
             >Menu</a
           >
-          <a href="page's/winkelwagen.html" class="text-gray-400 hover:text-white">Winkelwagen</a>
+          <a href="page's/winkelwagen.php" class="text-gray-400 hover:text-white">Winkelwagen</a>
           <a href="page's/inlog.html" class="text-gray-400 hover:text-white"
             >Log in</a
           >
